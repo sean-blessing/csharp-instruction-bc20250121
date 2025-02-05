@@ -91,7 +91,20 @@ namespace Chap06GuessingGame {
             bool success = false;
             while (!success) {
                 Console.Write(prompt);
-                nbr = Int32.Parse(Console.ReadLine());
+                // was user entry a whole number?
+                try {
+                    nbr = Int32.Parse(Console.ReadLine());
+                }
+                //catch {
+                //    Print("Error - entry must be a whole number.");
+                //    continue;
+                //}
+                catch (Exception e) {
+                    Print("Error - entry must be a whole number.");
+                    //Console.Error.WriteLine("e.Message: " + e.Message);
+                    //Console.Error.WriteLine("e.ToString(): " + e.ToString());
+                    continue;
+                }
                 if (nbr >= MIN_VAL && nbr <= MAX_VAL) {
                     success = true;
                 }
