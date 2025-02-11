@@ -41,17 +41,17 @@
                 // my second #
                 for (int j = 0; j < nums.Length; j++) {
                     if (i != j) {
-                        Print($"{nums[i]} + {nums[j]}, ");
+                        //Print($"{nums[i]} + {nums[j]}, ");
                         int sum = nums[i] + nums[j];
                         if (sum == target) {
-                            Print("Target!!!");
+                            //Print("Target!!!");
                             indices = [i, j];
-                            found = true;
+                            found = true; 
                             break;
                         }
                     }
                 }
-                PrintLine("");
+                //PrintLine("");
             }
 
             return indices;
