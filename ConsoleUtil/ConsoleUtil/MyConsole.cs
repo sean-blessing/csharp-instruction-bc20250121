@@ -16,6 +16,11 @@
             return result;
         }
 
+        public static double PromptDouble(string prompt) {
+            double result = 0;
+            return result;
+        }
+
         public static string PromptString(string prompt) {
             Print(prompt);
             return Console.ReadLine();
