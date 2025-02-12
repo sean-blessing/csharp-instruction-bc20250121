@@ -24,7 +24,7 @@ namespace Chap12ExGuessingGame {
         }
 
         private void DisplayWinnerMessage() {
-            MyConsole.PrintLine("You got it in " + count + " tries.");
+            MyConsole.PrintLine("You got it in " + Count + " tries.");
             if (Count <= 3) {
                 MyConsole.PrintLine("Great work! You are a mathematical wizard.");
             }
