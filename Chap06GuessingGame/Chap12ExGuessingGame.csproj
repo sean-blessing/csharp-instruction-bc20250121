@@ -1,0 +1,94 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{6E636071-513E-45E7-A9DD-F92A06BEC149}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Chap12ExGuessingGame</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\Chap06GuessingGame\DesignTimeBuild\.dtbcache.v2" />
+    <None Include=".vs\Chap06GuessingGame\FileContentIndex\d4b68fa2-b417-40ae-ac7c-49767c1f51d8.vsidx" />
+    <None Include=".vs\Chap06GuessingGame\v17\.futdcache.v2" />
+    <None Include=".vs\Chap06GuessingGame\v17\.suo" />
+    <None Include=".vs\Chap06GuessingGame\v17\DocumentLayout.backup.json" />
+    <None Include=".vs\Chap06GuessingGame\v17\DocumentLayout.json" />
+    <None Include=".vs\ProjectEvaluation\chap06guessinggame.metadata.v9.bin" />
+    <None Include=".vs\ProjectEvaluation\chap06guessinggame.projects.v9.bin" />
+    <None Include=".vs\ProjectEvaluation\chap06guessinggame.strings.v9.bin" />
+    <None Include="Chap06GuessingGame\bin\Debug\net8.0\Chap06GuessingGame.deps.json" />
+    <None Include="Chap06GuessingGame\bin\Debug\net8.0\Chap06GuessingGame.runtimeconfig.json" />
+    <None Include="Chap06GuessingGame\Chap06GuessingGame.csproj" />
+    <None Include="Chap06GuessingGame\obj\Chap06GuessingGame.csproj.nuget.dgspec.json" />
+    <None Include="Chap06GuessingGame\obj\Chap06GuessingGame.csproj.nuget.g.props" />
+    <None Include="Chap06GuessingGame\obj\Chap06GuessingGame.csproj.nuget.g.targets" />
+    <None Include="Chap06GuessingGame\obj\Debug\net8.0\Chap06GuessingGame.AssemblyInfoInputs.cache" />
+    <None Include="Chap06GuessingGame\obj\Debug\net8.0\Chap06GuessingGame.assets.cache" />
+    <None Include="Chap06GuessingGame\obj\Debug\net8.0\Chap06GuessingGame.csproj.BuildWithSkipAnalyzers" />
+    <None Include="Chap06GuessingGame\obj\Debug\net8.0\Chap06GuessingGame.csproj.CoreCompileInputs.cache" />
+    <None Include="Chap06GuessingGame\obj\Debug\net8.0\Chap06GuessingGame.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Chap06GuessingGame\obj\Debug\net8.0\Chap06GuessingGame.genruntimeconfig.cache" />
+    <None Include="Chap06GuessingGame\obj\Debug\net8.0\Chap06GuessingGame.sourcelink.json" />
+    <None Include="Chap06GuessingGame\obj\project.assets.json" />
+    <None Include="Chap06GuessingGame\obj\project.nuget.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chap06GuessingGame\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
+    <Compile Include="Chap06GuessingGame\obj\Debug\net8.0\Chap06GuessingGame.AssemblyInfo.cs" />
+    <Compile Include="Chap06GuessingGame\obj\Debug\net8.0\Chap06GuessingGame.GlobalUsings.g.cs" />
+    <Compile Include="Chap06GuessingGame\Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Chap06GuessingGame\bin\Debug\net8.0\Chap06GuessingGame.dll" />
+    <Content Include="Chap06GuessingGame\bin\Debug\net8.0\Chap06GuessingGame.exe" />
+    <Content Include="Chap06GuessingGame\bin\Debug\net8.0\Chap06GuessingGame.pdb" />
+    <Content Include="Chap06GuessingGame\obj\Debug\net8.0\apphost.exe" />
+    <Content Include="Chap06GuessingGame\obj\Debug\net8.0\Chap06GuessingGame.csproj.FileListAbsolute.txt" />
+    <Content Include="Chap06GuessingGame\obj\Debug\net8.0\Chap06GuessingGame.dll" />
+    <Content Include="Chap06GuessingGame\obj\Debug\net8.0\Chap06GuessingGame.pdb" />
+    <Content Include="Chap06GuessingGame\obj\Debug\net8.0\refint\Chap06GuessingGame.dll" />
+    <Content Include="Chap06GuessingGame\obj\Debug\net8.0\ref\Chap06GuessingGame.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\Chap12ExGuessingGame\v17\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

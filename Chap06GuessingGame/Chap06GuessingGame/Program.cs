@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.Design;
-
-namespace Chap06GuessingGame {
+﻿namespace Chap06GuessingGame {
     internal class Program {
         // constants
         const int MIN_VAL = 1; 
