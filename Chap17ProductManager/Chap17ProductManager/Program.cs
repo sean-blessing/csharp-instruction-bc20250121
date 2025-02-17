@@ -23,6 +23,9 @@ namespace Chap17ProductManager {
                     case 2:
                         AddProduct();
                         break;
+                    case 3:
+                        DelProduct();
+                        break;
                     case 0:
                         break;
                     default:
@@ -34,10 +37,32 @@ namespace Chap17ProductManager {
             MyConsole.PrintLine("bye");
         }
 
+        private static void DelProduct() {
+            MyConsole.PrintLine("\nDelete Product:");
+            MyConsole.PrintLine("=================================");
+            // prompt for the code to delete
+            string productCode = MyConsole.PromptString("Enter Code to delete: ").ToLower();
+            Product p = null;
+            foreach (Product product in products) {
+                if (product.Code == productCode) {
+                    p = product;
+                    break;
+                }
+            }
+            if (p != null) {
+                products.Remove(p);
+                ProductDB.SaveProducts(products);
+                MyConsole.PrintLine($"Product ({p.Code}) deleted.");
+            }
+            else {
+                MyConsole.PrintLine("No product found for code: " + productCode);
+            }
+        }
+
         private static void AddProduct() {
             MyConsole.PrintLine("\nAdd Product:");
             MyConsole.PrintLine("=================================");
-            string code = MyConsole.PromptString("Code: ");
+            string code = MyConsole.PromptString("Code: ").ToLower();
             string desc = MyConsole.PromptString("Description: ");
             decimal price = MyConsole.PromptDecimal("Price: ");
             Product p = new Product(code, desc, price);
@@ -59,6 +84,7 @@ namespace Chap17ProductManager {
             MyConsole.PrintLine("\nCOMMAND MENU:");
             MyConsole.PrintLine("1) List Products");
             MyConsole.PrintLine("2) Add Product");
+            MyConsole.PrintLine("3) Delete Product");
             MyConsole.PrintLine("0) Exit");
         }
     }
