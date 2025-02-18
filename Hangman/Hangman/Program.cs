@@ -12,6 +12,18 @@ namespace Hangman {
                 MyConsole.PrintLine(images[i]);
                 MyConsole.PrintLine("============");
             }
+            MyConsole.PrintLine();
+
+            string theWord = "super";
+            for (int i = 0; i < theWord.Length; i++) {
+                MyConsole.PrintLine($"{theWord[i]}");
+                if (theWord[i] == 'p') {
+                    MyConsole.PrintLine($"P found... position {i}");
+                }
+                        
+            }
+
+            
                 
 
             MyConsole.PrintLine("\nBye");
